@@ -5,7 +5,7 @@ body {
 }
 p {
     color: rgb(204, 204, 0);
-    border: whitesmoke;
+    
 }
 header > p {
     text-align: center;
@@ -18,12 +18,14 @@ h1 {
 img {
     width: 500px;
     float: right;
+    padding-right: 100px;
 }
 section1 img {
     width: 500px;
     height: 500px;
     float: left;
-    padding-left: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
 
 }
 ul{
@@ -40,7 +42,10 @@ section3 p{
 a {
     text-decoration: none;
     color:  rgb(204, 204, 0);
-    padding: 1px, white;
-
-   
-  }
+    padding-top: 50px;
+    float: left;
+    padding-left: 10px;
+}
+footer p{
+    text-align: center;
+}
