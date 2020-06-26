@@ -8,13 +8,13 @@ function askUserName(){
 }
 
 function confirmContinue(userName){ // the function is accepting a parameter
-    confirm('Greetings ' + userName + " the Gods wish to more about you!");
+    confirm('Greetings ' + userName + " the Gods wish to know more about you!");
 }
 
 function lightSide(){
     var lightSide;
     lightSide = prompt('Are you a lightweight...or a viking! (one or the other)');
-    while(lightSide.toLowerCase() != 'lightweight' + 'viking' && lightSide != ''){
+    while(lightSide.toLowerCase() != 'lightweight' && lightSide.toLowerCase() != 'viking' && lightSide != ''){
         lightSide = prompt('Are you a lightweight...or a viking! (one or the other)');
     }
     return lightSide
@@ -22,10 +22,10 @@ function lightSide(){
 
 function checkLight(lightSideQuestion){
     if(lightSideQuestion === 'viking'){
-        alert('Ah welcome viking! the Gods honor you with a fine selection of mead, skoll!')
+        alert('Ah welcome Viking! the Gods honor you with a fine selection of mead, but before you may accept their blessing, you must pass a test!')
         ableToAdopt = false;
     } if(lightSideQuestion === 'lightweight') {
-        alert('future viking, the Gods wish to test your wit!');
+        alert('Future Viking, the Gods wish to test your wit!');
         ableToAdopt = true;
     }
 }
@@ -54,7 +54,7 @@ function forceTest(){      // i++
 
 function adopt(lightSideQuestion){
     if(ableToAdopt === true){
-        var adopt = prompt('So future viking, do you enjoy Sweet or bitter Mead? there is no wrong answer.');
+        var adopt = prompt('So Viking, do you enjoy Sweet or bitter Mead? there is no wrong answer.');
 
         if(adopt === 'sweet'){
             alert('Ah, there is a wide selection to choose from! I recommend the Blueberry or Oak Barrel!');
